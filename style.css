@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    transition-duration: .5;
+}
+.container{
+    width: 960px;
+    margin: auto;
+    overflow: hidden;
+}
+p{
+    line-height: 1.5rem;
+    font-size: 13px;
+}
+h1{
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #505050;
+}
+h2{
+    font-size: 16px;
+    font-weight: normal;
+    color: #505050;
+    margin-bottom: 30px;
+}
+h4{
+    color: #e2494b;
+    font-size:13px ;
+    font-weight: normal;
+    margin-bottom: 18px;
+    transition: .5s;
+}
+h4:hover{
+    margin-bottom: 18px;
+    color:red;
+}
+a{
+    text-decoration: none;
+    color:#e2494b; 
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+a:hover{
+    color: red;
+}
+button{
+    background-color: #e2494b;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    transition: .5s;
+}
+button:hover{
+    background-color: red;
+}
+img{
+    width: 100%;
+    height: 200px;
+}
+
+
+/* 
+   basic typograpy end here
+*/
+
+.header{
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid #e5dddd;
+    background-color: white;
+}
+.logo{  
+ float: left;
+ margin-top: 7px;
+}
+.nav{
+    width: 620px;
+    float: right;
+    background-color: #e2494b;
+    padding: 7px 0px;
+    padding-bottom: 0px;
+    border-radius: 14px;
+    margin-top: 4px;
+}
+.nav ul li{
+    float: left;
+    list-style-type: none;
+}
+.nav ul li.active a{  
+    background-image: url(images/cursor.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: bottom;
+}
+.nav ul li a{
+    color: white;
+    display: block;
+    padding: 16px 22px;
+    padding-bottom: 8px;
+    transition: 0.5s;
+}
+.nav ul li a:hover{
+    background-image: url(images/cursor.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: bottom;
+}
+.header-bottom-text{ 
+    background-color: white;
+}
+.header-text{
+    padding: 40px 140px;
+    color: #4c4949;
+    text-align: center;
+    font-weight: normal;
+}
+.header-text h3{
+    font-weight: normal;
+    font-size: 22px;
+}
+.slider{
+    background-color: white;
+}
+.slider-img-wrapper{
+    position: relative;
+}
+.slider-img-wrapper img{
+    width: 100%;
+    height: 350px;
+    vertical-align: middle;
+    transition-duration: 1s;
+}
+.slider-img-wrapper button{
+    background:transparent ;
+    font-size: 50px;
+    opacity: .40;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.slider-img-wrapper button:hover{
+    opacity: 1;
+}
+.prev-btn{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.next-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.services{
+    background-color: white;
+}
+.row{
+    width: 100%;
+    margin-top: 40px ;
+    padding: 30px 0px;
+    position: relative;
+    border-top: 1px solid #d3cbcb;
+}
+.col-3{
+    width: 295px;
+    float: left;
+    padding: 25px 0px;
+    overflow: hidden;
+    margin-left: 37px;
+}
+.col-3:first-child{
+    margin-left: 0px;
+}
+.col-heading img{
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+}
+.col-heading h4{
+    float: left;
+    margin: 20px;
+}
+.col-3 p{
+    margin-bottom: 10px;
+}
+.row button{
+    position: absolute;
+    top: -28%;
+    left: 38%;
+}
+
+.pleyers{
+    background-color: white;
+    padding: 40px 0px;
+}
+.letest-work{
+    background-color: white;
+}
+.col-5{
+    width: 175px;
+    overflow: hidden;
+    float: left;
+    margin-left: 21px;
+    padding: 25px 0px;
+}
+.col-5:first-child{
+    margin-left: 0px;
+}
+.col-5 img{
+    width: 100%;
+    height: 175px;
+    transition: .5s;
+}
+.col-5 img:hover{
+    box-shadow: 1px 1px 10px gray;
+}
+.autho-name{
+    color: gray;
+    transition: .5s;
+}
+.autho-name:hover{
+    color: black;
+}
+.col-5 p{
+    text-align: left;
+}
+.gallary{
+    background-color: white;
+}
+.gallary .row .col-3 img{
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.gallary .row .col-3 img:hover{
+    box-shadow: 1px 1px 10px black;
+    width: 110%;
+    transform: scale(.8) rotate(-3deg);
+}
+.about{
+    background-color: #e2e2e2;
+}
+.col-1{
+    width: 460px;
+    float: left;
+    overflow: hidden;
+}
+.col-1-first{
+   margin-bottom: 30px;
+   overflow: hidden;
+}
+.col-1-first:last-child{
+    margin-bottom: 0px;
+}
+.col-1-img{
+    width: 95px;
+    float: left;
+}
+.col-1-img img{
+    width: 100%;
+    height: 95px;
+}
+.col-1-text{
+    width: 330px;
+    float: left;
+    margin-left: 30px;
+}
+.col-2{
+    width: 205px;
+    float: left;
+    margin-left: 30px;
+}
+.col-2 ul{
+    margin-bottom: 20px;
+}
+.col-2 ul:last-child{
+    margin-bottom: 0px;
+}
+.col-2 ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.col-2 ul li a{
+    font-size: 11px;
+}
+.form-box{
+    width: 230px;
+    margin-left: 35px;
+    float: left;
+    padding: 0px;
+}
+.form-box input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    background-color: white;
+}
+.form-box textarea{
+    width: 100%;
+    height: 110px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border: 0;
+    outline: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+.about-part {
+    padding: 50px 0px;
+    overflow: hidden;
+}
+.form-box button{
+    margin-top: 10px;
+}
+.footer{
+    background-color: #e2e2e2;
+    border-top: 1px solid white;
+}
+.footer2{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    color: gray;
+    transition: .5s;
+}
+.footer2:hover{
+    color:black
+}
+
+.menu-icon{
+    display: inline-block;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    display: none;
+    z-index: 555;
+}
+.menu-icon:hover{
+    box-shadow: 1px 1px 10px black;
+}
+.menu-icon div{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+}
+
+
+
+/*
+css meadia quyery 
+ */
+
+ 
+
+
+
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width: 100%;
+    }	
+    .logo{  
+        width: 22%;
+        margin-left: 10px;
+       }
+       .nav{
+           width: 63%;
+           float: right;
+           background-color: #e2494b;
+           padding: 7px 0px;
+           padding-bottom: 0px;
+           border-radius: 14px;
+           margin-top: 4px;
+       }
+       .nav ul li a {
+        color: white;
+        display: block;
+        padding: 16px 17px;
+        padding-bottom: 8px;
+        font-size: 11px;
+        transition: 0.5s;
+    }
+    .header-text h3{
+        font-weight: normal;
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    button{
+        font-size: 13px;
+    }
+    .col-3{
+        width: 29%;
+        margin-left: 4%;
+    }
+    .col-3:first-child{
+        margin-left: 3%;
+    }
+    .col-5{
+        width: 18%;
+        margin-left: 1.5%;
+    }
+    .col-5:first-child{
+        margin-left: 2%;
+    }
+    .col-1 {
+        width: 50%;
+        margin-left: 5%;
+    }
+    .col-1-img {
+        width: 34%;
+        margin-left: 2%;
+    }
+    .col-1-text {
+        float: left;
+        width: 60%;
+        margin-left: 3%;
+    }
+    .col-1-img img {
+        width: 100%;
+        height: 125px;
+    }
+    h2 {
+        margin-left: 2%;
+    }
+    .col-2 {
+        width: 32%;
+        float: right;
+        margin-left: 15px;
+        margin-right: 2%;
+    }
+    .form-box {
+        width: 32%;
+        float: right;
+        margin-left: 15px;
+        margin-right: 2%;
+    }
+
+  .footer p{
+      margin:5px;
+  }
+
+
+
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+    .container{
+        width: 100%;
+    }	
+  .logo {
+      margin-left: 2%;
+    }
+    	
+    .logo h1{
+    font-size: 20px;
+    margin-bottom: 0px;
+    }
+    .logo p{
+    font-size: 12px;
+    }
+    .nav {
+    width: 42%;
+    top: -4px;
+    position: absolute;
+    right: -999px;
+    z-index: 1;
+    transition: .5s;
+    }
+
+
+    .nav ul li {
+        float: left;
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+    }	
+    .nav ul li a{
+        border-bottom: 1px solid white;
+        display: inline-block;
+    }
+    .menu-icon{
+        display: inline-block;
+        background-color: blueviolet;
+        padding: 10px;
+        border-radius: 10px;
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        display: block;
+    }	
+    .header-text h3 {
+        font-weight: normal;
+        font-size: 17px;
+    }	
+    .col-3{
+        width: 29%;
+        margin-left: 4%;
+    }
+    .col-3:first-child{
+        margin-left: 3%;
+    } 
+    .col-5{
+        width: 18%;
+        margin-left: 1.5%;
+    }
+    .col-5:first-child{
+        margin-left: 2%;
+    }
+    h2 {
+        margin-left: 2%;
+    }
+    .col-2 {
+        width: 32%;
+        float: right;
+        margin-left: 15px;
+        margin-right: 2%;
+    }
+    .form-box {
+        width: 32%;
+        float: right;
+        margin-left: 15px;
+        margin-right: 2%;
+    }
+
+    .footer p{
+        margin:5px;
+    }
+
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+    .container{
+        width: 100%;
+    }	
+    .col-3 {
+        width: 100%;
+    }
+	.col-heading{
+        width:24%;
+    }
+	.col-heading img {
+        float: left;
+        width: 100%;
+        height: 100px;
+        margin-top:0px;
+        margin-right: 2%;
+    }
+	.col-heading h4{
+        text-align: center;
+        margin-right: 10px;
+    }
+	.col-heading p{
+        width: 65%;
+        float: right;
+        margin-right: 10px;
+    }
+	.menu-icon {
+        right: 1%;
+    }
+	
+	.row {
+        width: 100%;
+    }
+	.col-3 p {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .pleyers {
+        padding: 0px 0px;
+    }
+	.col-5 {
+        width: 48%;
+    }
+    .last-col-5 {
+        margin-left: 3%;
+        width: 95%;
+    }
+    .last-col-5 img{
+        margin-bottom: 10px;
+    }
+    .col-3 {
+        width: 95%;
+        margin-left: 3%;
+    }
+    .col-1 {
+        width: 100%;
+        margin-left: 3%;
+        overflow: hidden;
+    }
+    .col-1-img {
+        width: 29%;
+        float: left;
+    }
+    .col-1-text {
+        width: 62%;
+        float: left;
+        margin-left: 3%;
+    }
+    .col-2 {
+        width: 44%;
+        margin-left: 15px;
+        margin-top: 6%;
+        float: left;
+    }
+   .form-box{
+        width: 46%;
+        float: left;
+        margin-top: 6%;
+   }
+   .footer p {
+    margin: 0px;
+    padding: 1%;
+    font-size: 10px;
+}
+
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+
+	
+	
+}
